@@ -1,0 +1,27 @@
+{
+    "name": "Nifty 200 Intraday Marketwatch",
+    "description": "Nifty 200 Intraday Marketwatch",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "default_icon": {
+        "16": "/tradingview-logo-3.png",
+        "32": "/tradingview-logo-3.png",
+        "48": "/tradingview-logo-3.png",
+        "128": "/tradingview-logo-3.png"
+    },
+    "icons": {
+        "16": "/tradingview-logo-3.png",
+        "32": "/tradingview-logo-3.png",
+        "48": "/tradingview-logo-3.png",
+        "128": "/tradingview-logo-3.png"
+    }
+}

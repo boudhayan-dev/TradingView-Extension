@@ -1,0 +1,145 @@
+body{
+  width: 300px;
+  font-family: 'Roboto', serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table,  td, th{
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+}
+
+tr td:nth-child(1){
+  width: 195px;
+}
+
+tr td:nth-child(2){
+  width: 80px;
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 10px;
+}
+
+
+.heroSection {
+  height: 300px;
+  width: 300px;
+}
+
+.heroImage{
+  background-image: url("tradingview-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 50px;
+  top: 30px;
+  margin: 0;
+}
+
+
+.loginMessage {
+  font-weight: 200;
+  font-size: 0.8rem; 
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: #4184f3;
+  text-decoration-style: solid;
+}
+
+.calculateStockPrice{
+  background-color: #4184f3;
+  border: 1px solid #4184f3;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 5px 5px; 
+}
+
+.calculateStockPrice:hover {
+  background-color:white;
+  color: black;
+}
+
+.contentSection {
+  padding: 5px;
+}
+
+.formSection {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input {
+  padding: 5px;
+  width: 238px;
+  border: 1px solid #4184f3;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 15px; 
+  color: black;
+}
+
+.tradeButtons {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.buyButton,
+.sellButton {
+  display: inline-block;
+  width: 115px;
+  border: 0;
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+}
+
+.buyButton{
+   background-color: #4184f3;
+}
+
+.sellButton {
+  background-color: #ff5722 ;
+}
+
+
+.selectedStock,
+.stockPrice,
+.numberStocks,
+.requiredPoints {
+  background-color: #E8E8E8;
+}
+
+
+.warningText {
+  color: red;
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+
+.errorState {
+  border: 2px solid red;
+  color: grey;
+}
+
+#errorMessage1,
+#errorMessage2,
+#errorMessage3{
+  display: none;
+  color: red;
+  padding-top: 2px;
+}

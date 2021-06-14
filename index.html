@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifty 200</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="heroSection">
+        <div class="heroImage">
+        </div>
+        <span class="loginMessage">
+            Login to Trading View to enable the extension
+        </span>
+    </div>
+    <div class="contentSection">
+        <table>
+            <tr>
+                <td>
+                    <span class="warningText"></span>
+                </td>
+                <td>
+                    <button class="btn calculateStockPrice">
+                        <i class="fa fa-refresh"> Calculate</i>
+                    </button>
+                </td>
+            </tr>
+        </table>
+        <div class="formSection">
+            <h4>Set your intraday budget (₹)</h4>
+            <input value=200000 type="number" class="budget">
+            <h4>Set your expected profit target (₹)</h4>
+            <input value=10000 type="number" class="profit">
+            <h4>Selected Stock</h4>
+            <input type="text" disabled class="selectedStock">
+            <span id="errorMessage1">This field cannot be empty</span>
+            <h4>Current Stock price (leverage applied)</h4>
+            <input type="text" disabled class="stockPrice">
+            <span id="errorMessage2">This field cannot be empty</span>
+            <h4>Number of stocks you can buy/sell</h4>
+            <input type="number" disabled class="numberStocks">
+            <span id="errorMessage3">This field cannot be empty</span>
+            <h4>Points required to obtain target</h4>
+            <input type="number" disabled class="requiredPoints">
+            <form target="_blank" method="post" id="basket-form" action="https://kite.zerodha.com/connect/basket">
+                <input type="hidden" name="api_key" value="<<API_KEY>>" />
+                <input type="hidden" id="basket" name="data" value="" />
+            </form>
+            <div class="tradeButtons">
+                <button class="buyButton">Buy</button>
+                <button class="sellButton">Sell</button>
+            </div>
+        </div>
+    </div>
+    <script src="tradingview.js" type="text/javascript"></script>
+</body>
+
+</html>
