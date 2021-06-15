@@ -41,7 +41,7 @@ function calculateStockPrice() {
   var requiredPoints = document.querySelector(".requiredPoints");
   chrome.tabs.query({ currentWindow: true, active: true }, function (tab) {
     var tabTitle = tab[0].title.split(" ");
-    var stockValue = Math.floor(parseFloat(tabTitle[1]) / 5);
+    var stockValue = parseFloat(tabTitle[1]) / 5;
     selectedStock.value = tabTitle[0];
     stockPrice.value = "₹ " + stockValue + " (5x intraday leverage)";
 
